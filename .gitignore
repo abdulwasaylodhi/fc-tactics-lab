@@ -1,0 +1,17 @@
+# personal screenshots
+*.jpeg
+*.jpg
+*.png
+!fc-tactics/web/public/*.png
+
+# build output
+*.exe
+node_modules/
+dist/
+.vercel/
+
+# scraper working files (the built database lives in fc-tactics/web/public/db.json)
+fc-tactics/data/
+
+# OCR language cache from local tests
+*.traineddata
