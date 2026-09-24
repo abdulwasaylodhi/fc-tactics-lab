@@ -1,0 +1,39 @@
+# Your squad, read from the screenshots (top 18 by OVR, 19 Sep 2026).
+# Format:  Name, Main position, Main rating, Alternate positions, Ratings seen in game
+#
+#   Alternate positions  = the "Alternate Positions" printed on the card (researched on
+#                          renderz.app, Sep 2026). Use - if the card has none. In your
+#                          screenshots alternates play at FULL rating (Hazard LM 126,
+#                          Kimmich RB 126, Gullit CAM 122...), so the program treats them as
+#                          penalty-free. Change that with --alt-penalty N if the game changes.
+#   Ratings seen in game = POS=rating taken straight from the formation screenshots. These
+#                          always win over anything the program works out itself.
+# Anything not listed gets estimated from pitch distance. Lines starting with # are ignored.
+#
+# Notes on cards the web couldn't pin down exactly (alternates vary between a player's cards):
+#   Diaz      - ST confirmed by your screenshot (125); LM from his 119/120 cards.
+#   Caicedo   - some cards list CM, but yours shows CM 120 (a penalty), so yours doesn't.
+#   Ze Roberto- LW LB from his TOTS 26 card; other versions have CM instead.
+#   Perisic   - renderz lists his cards as LW with RW alternate; your RW card is assumed to be
+#               the mirror image (LW alternate). Check the card and fix if wrong.
+#   Kounde    - one card has CB, another has none; left empty to be safe.
+#   Messi     - card lists ST and CAM, but your screenshot shows ST 116, so the seen value wins.
+
+Hazard,       LW,  126, LM,          ST=119 CM=107 CB=107
+Kimmich,      CDM, 126, RB,          CM=122 CB=122 LM=119
+Courtois,     GK,  125, -
+Diaz,         LW,  125, LM ST,       CF=119
+Caicedo,      CDM, 124, -,           CM=120 CB=120 RM=118 LM=118 RWB=118 ST=106
+Martinez,     ST,  124, -
+Nuno Mendes,  LB,  124, -,           LWB=124 CB=120
+Ze Roberto,   LM,  124, LW LB
+Gabriel,      CB,  123, -
+Gullit,       CM,  122, CAM ST CDM,  LM=116 LWB=113
+Messi,        RW,  122, ST CAM,      ST=116 RM=118 RWB=116 CM=104 LM=104
+Zico,         CAM, 122, CM,          CF=122 LM=116 RM=116 CDM=113
+Van Dijk,     CB,  121, -,           RB=117
+Kounde,       RB,  120, -
+Perisic,      RW,  120, LW
+Pepe,         CB,  119, -
+Aguero,       ST,  119, -
+Rummenigge,   ST,  119, LW RW
